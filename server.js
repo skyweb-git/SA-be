@@ -21,6 +21,7 @@ import leadRoutes from './routes/leadRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import mediaRoutes from './routes/mediaRoutes.js';
 import employeeRoutes, { seedInitialEmployees } from './routes/employeeRoutes.js';
+import sessionRoutes from './routes/sessionRoutes.js';
 import { callRouter, emailRouter } from './routes/activityRoutes.js';
 
 // Middlewares
@@ -69,7 +70,8 @@ app.get('/', (req, res) => {
       upload: '/api/upload (POST with multipart/form-data)',
       media: '/api/media',
       auth: '/api/auth',
-      employees: '/api/employees'
+      employees: '/api/employees',
+      sessions: '/api/sessions (Employee work & screen activity tracking)'
     }
   });
 });
@@ -117,6 +119,7 @@ app.use('/api/contact', contactRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/media', mediaRoutes);
 app.use('/api/employees', employeeRoutes);
+app.use('/api/sessions', sessionRoutes);
 app.use('/api/call-logs', callRouter);
 app.use('/api/email-logs', emailRouter);
 app.use('/api/activity/calls', callRouter);
