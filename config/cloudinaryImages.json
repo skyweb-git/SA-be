@@ -1,0 +1,199 @@
+{
+  "timestamp": "2026-10-27T10:14:06.288Z",
+  "cloudName": "ps3hwvnw",
+  "rooms": [
+    {
+      "id": "renovated-double",
+      "title": "Renovated Double Room",
+      "source": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1200&auto=format&fit=crop",
+      "publicId": "room_renovated_double",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096030/edion_royal_guesthouse/rooms/room_renovated_double.jpg",
+      "public_id": "edion_royal_guesthouse/rooms/room_renovated_double",
+      "format": "jpg",
+      "width": 1200,
+      "height": 900,
+      "bytes": 190051
+    },
+    {
+      "id": "twin-kitchenette",
+      "title": "Twin Room with Kitchenette",
+      "source": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1200&auto=format&fit=crop",
+      "publicId": "room_twin_kitchenette",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096031/edion_royal_guesthouse/rooms/room_twin_kitchenette.jpg",
+      "public_id": "edion_royal_guesthouse/rooms/room_twin_kitchenette",
+      "format": "jpg",
+      "width": 1200,
+      "height": 900,
+      "bytes": 216471
+    },
+    {
+      "id": "triple-room",
+      "title": "Triple Room",
+      "source": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop",
+      "publicId": "room_triple",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096032/edion_royal_guesthouse/rooms/room_triple.jpg",
+      "public_id": "edion_royal_guesthouse/rooms/room_triple",
+      "format": "jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 165757
+    },
+    {
+      "id": "budget-double",
+      "title": "Budget Double Room",
+      "source": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
+      "publicId": "room_budget_double",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096033/edion_royal_guesthouse/rooms/room_budget_double.jpg",
+      "public_id": "edion_royal_guesthouse/rooms/room_budget_double",
+      "format": "jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 149971
+    },
+    {
+      "id": "comfort-triple-shower",
+      "title": "Comfort Triple Room with Shower",
+      "source": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=1200&auto=format&fit=crop",
+      "publicId": "room_comfort_triple_shower",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096033/edion_royal_guesthouse/rooms/room_comfort_triple_shower.jpg",
+      "public_id": "edion_royal_guesthouse/rooms/room_comfort_triple_shower",
+      "format": "jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 154404
+    },
+    {
+      "id": "budget-triple",
+      "title": "Budget Triple Room",
+      "source": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200&auto=format&fit=crop",
+      "publicId": "room_budget_triple",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096034/edion_royal_guesthouse/rooms/room_budget_triple.jpg",
+      "public_id": "edion_royal_guesthouse/rooms/room_budget_triple",
+      "format": "jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 132564
+    },
+    {
+      "id": "family-room",
+      "title": "Family Room",
+      "source": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1200&auto=format&fit=crop",
+      "publicId": "room_family",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096035/edion_royal_guesthouse/rooms/room_family.jpg",
+      "public_id": "edion_royal_guesthouse/rooms/room_family",
+      "format": "jpg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 149516
+    }
+  ],
+  "website": [
+    {
+      "key": "custom",
+      "name": "Guesthouse Hero 1",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\my-app\\public\\798129955.jpg",
+      "publicId": "hero_custom_798129955",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096036/edion_royal_guesthouse/backgrounds/hero_custom_798129955.jpg",
+      "public_id": "edion_royal_guesthouse/backgrounds/hero_custom_798129955",
+      "format": "jpg",
+      "width": 1024,
+      "height": 768,
+      "bytes": 148653
+    },
+    {
+      "key": "estate",
+      "name": "Estate Exterior",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\my-app\\public\\513927625.jpg",
+      "publicId": "hero_estate_513927625",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096037/edion_royal_guesthouse/backgrounds/hero_estate_513927625.jpg",
+      "public_id": "edion_royal_guesthouse/backgrounds/hero_estate_513927625",
+      "format": "jpg",
+      "width": 1024,
+      "height": 391,
+      "bytes": 56577
+    },
+    {
+      "key": "surreal",
+      "name": "Ambient 3D View",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\my-app\\public\\798153808.jpg",
+      "publicId": "hero_surreal_798153808",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096038/edion_royal_guesthouse/backgrounds/hero_surreal_798153808.jpg",
+      "public_id": "edion_royal_guesthouse/backgrounds/hero_surreal_798153808",
+      "format": "jpg",
+      "width": 1024,
+      "height": 768,
+      "bytes": 168381
+    },
+    {
+      "key": "location",
+      "name": "Location Map Banner",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\my-app\\public\\location-bg.jpg",
+      "publicId": "bg_location",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096039/edion_royal_guesthouse/backgrounds/bg_location.jpg",
+      "public_id": "edion_royal_guesthouse/backgrounds/bg_location",
+      "format": "jpg",
+      "width": 5909,
+      "height": 3939,
+      "bytes": 4221369
+    },
+    {
+      "key": "hero_bg",
+      "name": "Hero Background Vector",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\my-app\\public\\hero-bg.png",
+      "publicId": "bg_hero",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096041/edion_royal_guesthouse/backgrounds/bg_hero.png",
+      "public_id": "edion_royal_guesthouse/backgrounds/bg_hero",
+      "format": "png",
+      "width": 1024,
+      "height": 534,
+      "bytes": 725554
+    },
+    {
+      "key": "cta_bg",
+      "name": "CTA Background",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\my-app\\public\\cta-bg.webp",
+      "publicId": "bg_cta",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096042/edion_royal_guesthouse/backgrounds/bg_cta.webp",
+      "public_id": "edion_royal_guesthouse/backgrounds/bg_cta",
+      "format": "webp",
+      "width": 680,
+      "height": 510,
+      "bytes": 55138
+    }
+  ],
+  "uploads": [
+    {
+      "filename": "media-1791012710559-qwod5.jpg",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\backend\\uploads\\media-1791012710559-qwod5.jpg",
+      "publicId": "upload_media-1791012710559-qwod5",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096043/edion_royal_guesthouse/media/upload_media-1791012710559-qwod5.jpg",
+      "public_id": "edion_royal_guesthouse/media/upload_media-1791012710559-qwod5",
+      "format": "jpg",
+      "width": 1024,
+      "height": 768,
+      "bytes": 148653
+    },
+    {
+      "filename": "media-1791012844242-v1rp6.jpeg",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\backend\\uploads\\media-1791012844242-v1rp6.jpeg",
+      "publicId": "upload_media-1791012844242-v1rp6",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096044/edion_royal_guesthouse/media/upload_media-1791012844242-v1rp6.jpg",
+      "public_id": "edion_royal_guesthouse/media/upload_media-1791012844242-v1rp6",
+      "format": "jpg",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 126269
+    },
+    {
+      "filename": "media-1791026150719-a9m97.jpeg",
+      "filePath": "C:\\Users\\vamsh\\OneDrive\\Desktop\\Development\\south africa\\backend\\uploads\\media-1791026150719-a9m97.jpeg",
+      "publicId": "upload_media-1791026150719-a9m97",
+      "secure_url": "https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096044/edion_royal_guesthouse/media/upload_media-1791026150719-a9m97.jpg",
+      "public_id": "edion_royal_guesthouse/media/upload_media-1791026150719-a9m97",
+      "format": "jpg",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 173832
+    }
+  ]
+}

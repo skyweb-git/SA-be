@@ -5,6 +5,20 @@ const router = express.Router();
 
 const INITIAL_EMPLOYEES = [
   {
+    id: 'emp-admin-gmail',
+    name: 'Edion Royal Admin',
+    email: 'edionroyalcpt@gmail.com',
+    password: 'admin123',
+    role: 'admin',
+    department: 'Management',
+    designation: 'General Manager & Admin',
+    phone: '+27 78 972 4254',
+    status: 'Active',
+    avatar: '👑',
+    dailyCallTarget: 30,
+    dailyEmailTarget: 20
+  },
+  {
     id: 'emp-03',
     name: 'nvc',
     email: 'vikhyathnimmlapudi@gmail.com',

@@ -14,7 +14,7 @@ const initialRooms = [
     features: ['Private bathroom', 'Work desk', 'Flat-screen TV', 'Wardrobe'],
     pricePerNight: 850,
     maxGuests: 2,
-    imageUrl: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096030/edion_royal_guesthouse/rooms/room_renovated_double.jpg'
   },
   {
     slug: 'twin-kitchenette',
@@ -24,7 +24,7 @@ const initialRooms = [
     features: ['Fridge & microwave', 'Kitchenware', 'Private bathroom', 'Free WiFi'],
     pricePerNight: 950,
     maxGuests: 2,
-    imageUrl: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096031/edion_royal_guesthouse/rooms/room_twin_kitchenette.jpg'
   },
   {
     slug: 'triple-room',
@@ -34,7 +34,7 @@ const initialRooms = [
     features: ['Private bathroom', 'Flat-screen TV', 'Free WiFi', 'Flexible cancellation'],
     pricePerNight: 1100,
     maxGuests: 3,
-    imageUrl: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096032/edion_royal_guesthouse/rooms/room_triple.jpg'
   },
   {
     slug: 'budget-double',
@@ -44,7 +44,7 @@ const initialRooms = [
     features: ['Private bathroom', 'Flat-screen TV', 'Free WiFi', 'Budget-friendly'],
     pricePerNight: 750,
     maxGuests: 2,
-    imageUrl: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096033/edion_royal_guesthouse/rooms/room_budget_double.jpg'
   },
   {
     slug: 'comfort-triple-shower',
@@ -54,7 +54,7 @@ const initialRooms = [
     features: ['Private bathroom', 'Shower', 'Flat-screen TV', 'Free WiFi'],
     pricePerNight: 1150,
     maxGuests: 3,
-    imageUrl: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096033/edion_royal_guesthouse/rooms/room_comfort_triple_shower.jpg'
   },
   {
     slug: 'budget-triple',
@@ -64,7 +64,7 @@ const initialRooms = [
     features: ['Private bathroom', 'Flat-screen TV', 'Free WiFi', 'Extra-large bed'],
     pricePerNight: 1050,
     maxGuests: 3,
-    imageUrl: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096034/edion_royal_guesthouse/rooms/room_budget_triple.jpg'
   },
   {
     slug: 'family-room',
@@ -74,7 +74,7 @@ const initialRooms = [
     features: ['Private bathroom', 'Flat-screen TV', 'Free WiFi', 'Family layout'],
     pricePerNight: 1350,
     maxGuests: 4,
-    imageUrl: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096035/edion_royal_guesthouse/rooms/room_family.jpg'
   }
 ];
 
@@ -125,13 +125,14 @@ const initialReviews = [
 
 import Content from '../models/Content.js';
 import Lead from '../models/Lead.js';
+import { seedInitialEmployees } from '../routes/employeeRoutes.js';
 import { DEFAULT_GUESTHOUSE_CONTENT } from '../config/defaultContent.js';
 
 const initialLeads = [];
 
 const seedData = async () => {
   try {
-    const mongoUri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/edion_royal_guesthouse';
+    const mongoUri = process.env.MONGO_URI || process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/edion_royal_guesthouse';
     await mongoose.connect(mongoUri);
     console.log(`[Seed] Connected to MongoDB: ${mongoUri}`);
 
@@ -157,6 +158,9 @@ const seedData = async () => {
 
     await Lead.insertMany(initialLeads);
     console.log(`[Seed] Successfully seeded ${initialLeads.length} initial leads.`);
+
+    await seedInitialEmployees();
+    console.log('[Seed] Successfully seeded initial staff & admin employees.');
 
     console.log('[Seed] Database seeding completed successfully!');
     process.exit(0);

@@ -3,9 +3,19 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const cloud_name = (process.env.CLOUDINARY_CLOUD_NAME || '').trim();
-const api_key = (process.env.CLOUDINARY_API_KEY || '').trim();
-const api_secret = (process.env.CLOUDINARY_API_SECRET || '').trim();
+let cloud_name = (process.env.CLOUDINARY_CLOUD_NAME || '').trim();
+let api_key = (process.env.CLOUDINARY_API_KEY || '').trim();
+let api_secret = (process.env.CLOUDINARY_API_SECRET || '').trim();
+
+// Support parsing from CLOUDINARY_URL (cloudinary://api_key:api_secret@cloud_name) if individual variables are unset
+if ((!cloud_name || !api_key || !api_secret) && process.env.CLOUDINARY_URL) {
+  const match = process.env.CLOUDINARY_URL.match(/cloudinary:\/\/([^:]+):([^@]+)@([^\/\s]+)/);
+  if (match) {
+    api_key = api_key || match[1];
+    api_secret = api_secret || match[2];
+    cloud_name = cloud_name || match[3];
+  }
+}
 
 cloudinary.config({
   cloud_name,

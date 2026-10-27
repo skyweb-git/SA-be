@@ -13,28 +13,28 @@ const uploadedMedia = [
   {
     key: 'media-01',
     name: 'Guesthouse Hero 1',
-    url: '/798129955.jpg',
+    url: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096036/edion_royal_guesthouse/backgrounds/hero_custom_798129955.jpg',
     category: 'hero',
     createdAt: new Date().toISOString()
   },
   {
     key: 'media-02',
     name: 'Estate Exterior',
-    url: '/513927625.jpg',
+    url: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096037/edion_royal_guesthouse/backgrounds/hero_estate_513927625.jpg',
     category: 'hero',
     createdAt: new Date().toISOString()
   },
   {
     key: 'media-03',
     name: 'Ambient 3D View',
-    url: '/798153808.jpg',
+    url: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096038/edion_royal_guesthouse/backgrounds/hero_surreal_798153808.jpg',
     category: 'hero',
     createdAt: new Date().toISOString()
   },
   {
     key: 'media-04',
     name: 'Location Map Banner',
-    url: '/location-bg.jpg',
+    url: 'https://res.cloudinary.com/ps3hwvnw/image/upload/v1793096039/edion_royal_guesthouse/backgrounds/bg_location.jpg',
     category: 'location',
     createdAt: new Date().toISOString()
   }

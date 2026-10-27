@@ -4,6 +4,16 @@ import Employee from '../models/Employee.js';
 // Auth controller for Admin & Staff
 const ADMIN_CREDENTIALS = [
   {
+    email: 'edionroyalcpt@gmail.com',
+    password: 'admin123',
+    passcode: 'admin123',
+    name: 'Edion Royal Admin',
+    role: 'admin',
+    department: 'Management',
+    designation: 'General Manager & Admin',
+    avatar: '👑'
+  },
+  {
     email: 'edionroyal@gmail.com',
     password: 'admin123',
     passcode: 'admin123',
@@ -55,7 +65,7 @@ export const login = async (req, res) => {
 
   // 1. Check Hardcoded Admin Credentials
   let user = ADMIN_CREDENTIALS.find(u => 
-    (u.email.toLowerCase() === cleanEmail || cleanEmail === 'admin@edionroyal.co.za' || cleanEmail === 'admin@edionroyal.com' || cleanEmail === 'edionroyal@gmail.com') && 
+    (u.email.toLowerCase() === cleanEmail || cleanEmail === 'admin@edionroyal.co.za' || cleanEmail === 'admin@edionroyal.com' || cleanEmail === 'edionroyalcpt@gmail.com' || cleanEmail === 'edionroyal@gmail.com') && 
     (u.password === cleanPass || u.passcode === cleanPass || cleanPass === 'admin123' || cleanPass === 'Admin@123' || cleanPass === 'welcome123')
   );
 
@@ -319,10 +329,10 @@ export const verifyEmailChange = async (req, res) => {
 };
 
 /**
- * Dispatch verification code to an email address (e.g. edionroyal@gmail.com)
+ * Dispatch verification code to an email address (e.g. edionroyalcpt@gmail.com)
  */
 export const sendVerificationCode = async (req, res) => {
-  const targetEmail = (req.body?.email || req.query?.email || 'edionroyal@gmail.com').trim().toLowerCase();
+  const targetEmail = (req.body?.email || req.query?.email || 'edionroyalcpt@gmail.com').trim().toLowerCase();
   const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
   activeOtps.set(targetEmail, {
@@ -353,7 +363,7 @@ export const sendVerificationCode = async (req, res) => {
         <p style="color: #64748b; font-size: 13px;">This code is valid for 15 minutes.</p>
       </div>
       <div style="border-top: 1px solid #e2e8f0; padding-top: 12px; font-size: 12px; color: #94a3b8; text-align: center;">
-        7 Arum Street, Milnerton, Cape Town, 7441 • edionroyal@gmail.com
+        7 Arum Street, Milnerton, Cape Town, 7441 • edionroyalcpt@gmail.com
       </div>
     </div>
   `;
